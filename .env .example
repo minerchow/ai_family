@@ -1,0 +1,15 @@
+# 复制本文件并重命名为 .env（同一目录），填写自己的配置。
+# .env 已被 .gitignore 忽略，不会提交到 Git。
+
+# 本地 MySQL 账号密码与默认值不同时，在这里覆盖
+DATABASE_URL=mysql://root:xxx@localhost:3306/ai_family_fastapi
+
+# ===== 推理模型 =====
+DASHSCOPE_API_KEY=
+BAILIAN_BASE_URL=https://note3-prev-api.askdiandian.com/v1
+BAILIAN_CHAT_MODEL=dots3-note-prev
+
+# ===== 向量化模型（中转站，与推理模型分开） =====
+EMBEDDING_BASE_URL=https://api.siliconflow.cn/v1/embeddings
+EMBEDDING_API_KEY=
+EMBEDDING_MODEL=BAAI/bge-m3
